@@ -1,0 +1,56 @@
+<h2>Paises</h2>
+<hr>
+
+<ul class="list-group">
+  <!-- Para hacer la navegacion y transformar los li en un link de navegacion propiamente que reconoce el router se tiene que utilizar atributos -->
+  <!-- Si esta vacio la URL del HomePage, el active en Home funciona bien, pero cuando clickeo en la ruta About, el active aparece en el About y en el Home. Esto sucede porque sigue reconociendo al path como vacio sin importar que ya esta /about, entonces se seleccionan como active a ambaras rutas. Para solucioanr esto utilizo [routerLinkActiveOptions]="{ exact: true }, esto le dice a al active que tiene que ser exactamente el path con sus segmentos como esta definido en el routeo. Con esta exactitud hacemos de que ya no tengamos el problema anterior al seleccionar cualquier otra ruta  -->
+  <!-- <li
+    class="list-group-item"
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Home page
+  </li>
+
+  <li
+    class="list-group-item"
+    routerLink="/about"
+    routerLinkActive="active"
+  >
+    About page
+  </li>
+
+  <li
+    class="list-group-item"
+    routerLink="/contact"
+    routerLinkActive="active"
+  >
+    Contact page
+  </li> -->
+
+  <li
+    class="list-group-item"
+    routerLink="/countries/by-capital"
+    routerLinkActive="active"
+  >
+    Por capital
+  </li>
+
+  <li
+    class="list-group-item"
+    routerLink="/countries/by-country"
+    routerLinkActive="active"
+  >
+    Por pais
+  </li>
+
+  <li
+    class="list-group-item"
+    routerLink="/countries/by-region"
+    routerLinkActive="active"
+  >
+    Por región
+  </li>
+
+</ul>

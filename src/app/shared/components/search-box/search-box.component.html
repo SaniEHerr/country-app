@@ -1,0 +1,10 @@
+<!-- El placeholder esta en [] para aplicarle dinamismo al placeholder segun lo que yo quiera buscar, una capital, un pais o una region -->
+<input
+  type="text"
+  class="form-control"
+  [placeholder]="placeholder"
+  [value]="initialValue"
+  (keyup)="onKeyPress(txtSearchInput.value)"
+  #txtSearchInput
+>
+  <!-- (keyup.enter)="emitValue(txtSearchInput.value)" -->
